@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/******************* Shared Styles *******************/
+#box-purple, #box-yellow, #box-green, #box-blue, #box-1, #box-2, #box-3, #box-4 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-purple p, #box-yellow p, #box-green p, #box-blue p {
+    font-size: 4.5rem;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#box-1, #box-2, #box-3, #box-4 {
+    background-color: #fff;
+}
+
+#box-1 p, #box-2 p, #box-3 p, #box-4 p {
+    font-size: 8rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+/*******************Top Right*******************/
+
+#box-purple {
+    left: 0;
+    background-color: #971fbf;
+}
+
+#box-purple p {
+    transform: rotate(-30deg);
+}
+
+#box-1 {
+    left: 0;
+}
+
+#box-1 p {
+    color: #971fbf;
+    transform: rotate(-30deg);
+}
+
+/*******************Top Left*******************/
+
+#box-yellow {
+    right: 0;
+    background-color: #f2ce0f;
+}
+
+#box-yellow p {
+    font-size: 4.5rem;
+    color: white;
+    transform: rotate(30deg);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#box-2 {
+    right: 0;
+}
+
+#box-2 p {
+    color: #f2ce0f;
+    transform: rotate(30deg);
+}
+
+/*******************Bottom Right*******************/
+
+#box-blue {
+    right: 0;
+    bottom: 0;
+    background-color: #4b0ff2;
+}
+
+#box-blue p {
+    font-size: 4.5rem;
+    color: white;
+    transform: rotate(130deg);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#box-3 {
+    right: 0;
+    bottom: 0;
+}
+
+#box-3 p {
+    color: #4b0ff2;
+    transform: rotate(130deg);
+}
+
+/*******************Bottom Left*******************/
+
+#box-green {
+    left: 0;
+    bottom: 0;
+    background-color: #91c752;
+}
+
+#box-green p {
+    font-size: 4.5rem;
+    color: white;
+    transform: rotate(-130deg);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#box-4 {
+    left: 0;
+    bottom: 0;
+}
+
+#box-4 p {
+    color: #91c752;
+    transform: rotate(-130deg);
+}
+
+/*******************Fortune Message*******************/
+
+#message {
+    background: linear-gradient(120deg, #971fbf, #4b0ff2, #91c752, #f2ce0f);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-div {
+    padding: 5%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#message p {
+   font-size: 1.5rem;
+   color: #000;
+}
+
+.hide {
+    display: none;
+}

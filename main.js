@@ -1,29 +1,42 @@
 $(document).ready(function() {
-    $("#box-purple").click(function() {
+//Any Colors
+    $('#colors section p').click(function(){
        for (i = 0; i < $(this).text().length; i++) {
         $(this)
-        .animate({bottom: '70%'}, 1000)
-        .animate({top: '0%'}, 1000)
-        .animate({right: '70%'}, 1000)
-        .animate({left: '0%'}, 1000);
+        .animate({opacity: '0%'}, 1000)
+        .animate({opacity: '100%'}, 1000)
        }
        setTimeout(function() {
-           $("#box-purple").hide();
-           $("#box-1").show();
-        }, $(this).text().length * 1000);
+           $('#colors').hide();
+           $('#numbers').show();
+        }, $(this).text().length * 2000);
        });
-
-       $("#box-1").click(function() {
+//Any Numbers
+       $('#numbers section p').click(function() {
         for (i = 0; i < parseInt($(this).text()); i++) {
          $(this)
-         .animate({bottom: '70%'}, 1000)
-         .animate({top: '0%'}, 1000)
-         .animate({right: '70%'}, 1000)
-         .animate({left: '0%'}, 1000);
+         .animate({opacity: '0%'}, 1000)
+         .animate({opacity: '100%'}, 1000)
         }
+   
         setTimeout(function() {
-            $("#box-1").hide();
-            $("#message").show();
-        }, parseInt($(this).text()) * 1000);
-     });    
-});
+            $('#numbers').hide();
+            $('#numbers-last').show();
+        }, parseInt($(this).text()) * 2000);
+     });
+//Any Last Numbers
+       $('#numbers-last section p').click(function() {
+        for (i = 0; i < parseInt($(this).text()); i++) {
+         $(this)
+         .animate({opacity: '0%'}, 1000)
+         .animate({opacity: '100%'}, 1000)
+        }
+
+        setTimeout(function() {
+            $('#numbers-last').hide();
+            $('#message').show();
+        }, parseInt($(this).text()) * 2000);
+     });
+    });
+
+ 

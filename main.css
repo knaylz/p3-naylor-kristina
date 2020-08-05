@@ -3,13 +3,17 @@
     font-family: 'Permanent Marker', cursive;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
+.hide {
+    display: none;
 }
 
-/******************* Shared Styles *******************/
-#box-purple, #box-yellow, #box-green, #box-blue, #box-1, #box-2, #box-3, #box-4 {
+main {
+    display: flex;
+    cursor:url('http://upload.wikimedia.org/wikipedia/commons/d/de/POL_apple.jpg');
+}
+
+/******************* Shared Box Styles to Reduce Code *******************/
+#box-purple, #box-yellow, #box-green, #box-blue, #box-1, #box-1-last, #box-2, #box-2-last, #box-3, #box-3-last, #box-4, #box-4-last {
     width: 50%;
     height: 50%;
     position: absolute;
@@ -25,17 +29,17 @@ main {
     -webkit-text-stroke-color: black;
 }
 
-#box-1, #box-2, #box-3, #box-4 {
+#box-1, #box-1-last, #box-2, #box-2-last, #box-3, #box-3-last, #box-4, #box-4-last {
     background-color: #fff;
 }
 
-#box-1 p, #box-2 p, #box-3 p, #box-4 p {
+#box-1 p, #box-1-last p, #box-2 p, #box-2-last p, #box-3 p, #box-3-last p, #box-4 p, #box-4-last p {
     font-size: 8rem;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 
-/*******************Top Right*******************/
+/*******************Top Right Boxes*******************/
 
 #box-purple {
     left: 0;
@@ -46,16 +50,16 @@ main {
     transform: rotate(-30deg);
 }
 
-#box-1 {
+#box-1, #box-1-last {
     left: 0;
 }
 
-#box-1 p {
+#box-1 p, #box-1-last p {
     color: #971fbf;
     transform: rotate(-30deg);
 }
 
-/*******************Top Left*******************/
+/*******************Top Left Boxes*******************/
 
 #box-yellow {
     right: 0;
@@ -70,16 +74,16 @@ main {
     -webkit-text-stroke-color: black;
 }
 
-#box-2 {
+#box-2, #box-2-last {
     right: 0;
 }
 
-#box-2 p {
+#box-2 p, #box-2-last p {
     color: #f2ce0f;
     transform: rotate(30deg);
 }
 
-/*******************Bottom Right*******************/
+/*******************Bottom Right Boxes*******************/
 
 #box-blue {
     right: 0;
@@ -95,17 +99,17 @@ main {
     -webkit-text-stroke-color: black;
 }
 
-#box-3 {
+#box-3, #box-3-last {
     right: 0;
     bottom: 0;
 }
 
-#box-3 p {
+#box-3 p, #box-3-last p {
     color: #4b0ff2;
     transform: rotate(130deg);
 }
 
-/*******************Bottom Left*******************/
+/*******************Bottom Left Boxes*******************/
 
 #box-green {
     left: 0;
@@ -121,12 +125,12 @@ main {
     -webkit-text-stroke-color: black;
 }
 
-#box-4 {
+#box-4, #box-4-last {
     left: 0;
     bottom: 0;
 }
 
-#box-4 p {
+#box-4 p, #box-4-last p {
     color: #91c752;
     transform: rotate(-130deg);
 }
@@ -139,6 +143,7 @@ main {
     height: 100vh;
     text-align: center;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -154,6 +159,10 @@ main {
    color: #000;
 }
 
-.hide {
-    display: none;
+button {
+    margin-top: 20px;
+}
+
+button a {
+    text-decoration: none;
 }

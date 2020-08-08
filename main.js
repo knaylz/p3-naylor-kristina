@@ -42,7 +42,7 @@ $(document).ready(function() {
      });
     });
 //Random Fortune
-    var strings = ["Someone has Googled you recently.","You are good enough, smart enough, and goshdarn it, people like you!", "Plan for an adventure this weekend.", "Don't be afraid to take that big step.","Don't pursue happiness, create it!", "A ship in harbor is safe, but that's not why ships are built."];  // Store the possible strings in an array
+    var strings = ["Someone has Googled you recently.","You are good enough, smart enough, and goshdarn it, people like you!", "Plan for an adventure this weekend. Don't let Corona stand in your way!", "Don't be afraid to take that big step.","Don't pursue happiness, create it!", "A ship in harbor is safe, but that's not why ships are built."];  // Store the possible strings in an array
 
     var btn = document.getElementById('numbers-last');
     var output = document.getElementById('messagep');

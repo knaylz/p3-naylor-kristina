@@ -81,6 +81,22 @@ footer p {
 footer p a {
     text-decoration: none;
 }
+
+.purple-letter {
+    color: #971fbf;
+}
+
+.yellow-letter {
+    color: #f2ce0f;
+}
+
+.blue-letter {
+    color: #4b0ff2;
+}
+
+.green-letter {
+    color: #91c752;
+}
 /*******************Top Right Boxes*******************/
 
 #box-purple {

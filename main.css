@@ -9,7 +9,6 @@
 
 main {
     display: flex;
-    cursor:url('http://upload.wikimedia.org/wikipedia/commons/d/de/POL_apple.jpg');
 }
 
 /******************* Shared Box Styles to Reduce Code *******************/
@@ -20,6 +19,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor:url('images/hand-cursor.gif');
 }
 
 #box-purple p, #box-yellow p, #box-green p, #box-blue p {
@@ -31,6 +31,7 @@ main {
 
 #box-1, #box-1-last, #box-2, #box-2-last, #box-3, #box-3-last, #box-4, #box-4-last {
     background-color: #fff;
+    background-image: url('images/paper-background.jpg');
 }
 
 #box-1 p, #box-1-last p, #box-2 p, #box-2-last p, #box-3 p, #box-3-last p, #box-4 p, #box-4-last p {
@@ -39,6 +40,47 @@ main {
     -webkit-text-stroke-color: black;
 }
 
+#box-1 p, #box-2 p, #box-3 p, #box-4 p {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    background-color: #fff;
+    padding: 1% 10%;
+    border-radius: 110px;
+}
+
+#directions {
+    position: absolute;
+    z-index: 10000000;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    height: 5%;
+    text-align: center;
+}
+
+#directions-p {
+    font-size: 2rem;
+}
+
+footer {
+        position: absolute;
+        bottom: 0;
+        z-index: 10000000;
+        width: 100%;
+        background-color: #000;
+        height: 5%;
+        text-align: center;
+        margin: auto;
+}
+
+footer p {
+       font-size: 1.5rem;
+       color: #fff;
+       padding-top: 1%;
+}
+
+footer p a {
+    text-decoration: none;
+}
 /*******************Top Right Boxes*******************/
 
 #box-purple {
@@ -54,9 +96,33 @@ main {
     left: 0;
 }
 
-#box-1 p, #box-1-last p {
+#box-1-last p {
     color: #971fbf;
     transform: rotate(-30deg);
+}
+
+#box-1 p {
+    color: #fff;
+    background-color: #971fbf;
+    padding: 1% 10%;
+    border-radius: 110px;
+    transform: rotate(-30deg);
+}
+
+#box-2 p {
+    color: #fff;
+    background-color: #f2ce0f;
+    padding: 1% 10%;
+    border-radius: 110px;
+    transform: rotate(30deg);
+}
+
+#box-3 p {
+    color: #fff;
+    background-color: #4b0ff2;
+    padding: 1% 10%;
+    border-radius: 110px;
+    transform: rotate(130deg);
 }
 
 /*******************Top Left Boxes*******************/
@@ -78,9 +144,15 @@ main {
     right: 0;
 }
 
-#box-2 p, #box-2-last p {
+#box-2-last p {
     color: #f2ce0f;
     transform: rotate(30deg);
+}
+
+#box-4 p {
+    color: #fff;
+    background-color: #91c752;
+    transform: rotate(-130deg);
 }
 
 /*******************Bottom Right Boxes*******************/
@@ -104,7 +176,7 @@ main {
     bottom: 0;
 }
 
-#box-3 p, #box-3-last p {
+#box-3-last p {
     color: #4b0ff2;
     transform: rotate(130deg);
 }
@@ -130,7 +202,7 @@ main {
     bottom: 0;
 }
 
-#box-4 p, #box-4-last p {
+#box-4-last p {
     color: #91c752;
     transform: rotate(-130deg);
 }
@@ -155,14 +227,16 @@ main {
 }
 
 #message p {
-   font-size: 1.5rem;
+   font-size: 2.5rem;
    color: #000;
 }
 
 button {
     margin-top: 20px;
+    padding: 10px;
 }
 
 button a {
     text-decoration: none;
+    font-size: 1rem;
 }

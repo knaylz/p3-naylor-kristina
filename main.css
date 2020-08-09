@@ -76,7 +76,6 @@ footer p a {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor:url('images/hand-cursor.gif');
 }
 
 #box-purple p, #box-yellow p, #box-green p, #box-blue p, #box-1 p, #box-2 p, #box-3 p, #box-4 p {

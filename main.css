@@ -11,41 +11,7 @@ main {
     display: flex;
 }
 
-/******************* Shared Box Styles to Reduce Code *******************/
-#box-purple, #box-yellow, #box-green, #box-blue, #box-1, #box-1-last, #box-2, #box-2-last, #box-3, #box-3-last, #box-4, #box-4-last {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor:url('images/hand-cursor.gif');
-}
-
-#box-purple p, #box-yellow p, #box-green p, #box-blue p {
-    font-size: 4.5rem;
-    color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
-#box-1, #box-1-last, #box-2, #box-2-last, #box-3, #box-3-last, #box-4, #box-4-last {
-    background-color: #fff;
-    background-image: url('images/paper-background.jpg');
-}
-
-#box-1 p, #box-1-last p, #box-2 p, #box-2-last p, #box-3 p, #box-3-last p, #box-4 p, #box-4-last p {
-    font-size: 8rem;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
-#box-1 p, #box-2 p, #box-3 p, #box-4 p {
-    box-shadow: 2px 2px 2px 2px lightgray;
-    background-color: #fff;
-    padding: 1% 10%;
-    border-radius: 110px;
-}
+/********************* Top Items *******************/
 
 #directions {
     position: absolute;
@@ -59,7 +25,10 @@ main {
 
 #directions-p {
     font-size: 2rem;
+    padding-top: 1%;
 }
+
+/********************* Footer Items *******************/
 
 footer {
         position: absolute;
@@ -97,7 +66,45 @@ footer p a {
 .green-letter {
     color: #91c752;
 }
-/*******************Top Right Boxes*******************/
+
+/********************* Shared Box Styles to Reduce Code *******************/
+
+#box-purple, #box-yellow, #box-green, #box-blue, #box-1, #box-1-last, #box-2, #box-2-last, #box-3, #box-3-last, #box-4, #box-4-last {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:url('images/hand-cursor.gif');
+}
+
+#box-purple p, #box-yellow p, #box-green p, #box-blue p, #box-1 p, #box-2 p, #box-3 p, #box-4 p {
+    font-size: 4.5rem;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#box-1, #box-1-last, #box-2, #box-2-last, #box-3, #box-3-last, #box-4, #box-4-last {
+    background-color: #fff;
+    background-image: url('images/paper-background.jpg');
+}
+
+#box-1 p, #box-1-last p, #box-2 p, #box-2-last p, #box-3 p, #box-3-last p, #box-4 p, #box-4-last p {
+    font-size: 8rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#box-1 p, #box-2 p, #box-3 p, #box-4 p {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    background-color: #fff;
+    padding: 1% 10%;
+    border-radius: 110px;
+}
+
+/********************* Top Right Boxes*******************/
 
 #box-purple {
     left: 0;
@@ -118,30 +125,13 @@ footer p a {
 }
 
 #box-1 p {
-    color: #fff;
     background-color: #971fbf;
     padding: 1% 10%;
     border-radius: 110px;
     transform: rotate(-30deg);
 }
 
-#box-2 p {
-    color: #fff;
-    background-color: #f2ce0f;
-    padding: 1% 10%;
-    border-radius: 110px;
-    transform: rotate(30deg);
-}
-
-#box-3 p {
-    color: #fff;
-    background-color: #4b0ff2;
-    padding: 1% 10%;
-    border-radius: 110px;
-    transform: rotate(130deg);
-}
-
-/*******************Top Left Boxes*******************/
+/********************* Top Left Boxes *******************/
 
 #box-yellow {
     right: 0;
@@ -150,7 +140,6 @@ footer p a {
 
 #box-yellow p {
     font-size: 4.5rem;
-    color: white;
     transform: rotate(30deg);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
@@ -165,13 +154,14 @@ footer p a {
     transform: rotate(30deg);
 }
 
-#box-4 p {
-    color: #fff;
-    background-color: #91c752;
-    transform: rotate(-130deg);
+#box-2 p {
+    background-color: #f2ce0f;
+    padding: 1% 10%;
+    border-radius: 110px;
+    transform: rotate(30deg);
 }
 
-/*******************Bottom Right Boxes*******************/
+/********************* Bottom Right Boxes *******************/
 
 #box-blue {
     right: 0;
@@ -181,7 +171,6 @@ footer p a {
 
 #box-blue p {
     font-size: 4.5rem;
-    color: white;
     transform: rotate(130deg);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
@@ -197,7 +186,14 @@ footer p a {
     transform: rotate(130deg);
 }
 
-/*******************Bottom Left Boxes*******************/
+#box-3 p {
+    background-color: #4b0ff2;
+    padding: 1% 10%;
+    border-radius: 110px;
+    transform: rotate(130deg);
+}
+
+/******************* Bottom Left Boxes *******************/
 
 #box-green {
     left: 0;
@@ -207,7 +203,6 @@ footer p a {
 
 #box-green p {
     font-size: 4.5rem;
-    color: white;
     transform: rotate(-130deg);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
@@ -223,7 +218,12 @@ footer p a {
     transform: rotate(-130deg);
 }
 
-/*******************Fortune Message*******************/
+#box-4 p {
+    background-color: #91c752;
+    transform: rotate(-130deg);
+}
+
+/******************* Fortune Message *******************/
 
 #message {
     background: linear-gradient(120deg, #971fbf, #4b0ff2, #91c752, #f2ce0f);
